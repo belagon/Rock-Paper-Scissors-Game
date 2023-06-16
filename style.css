@@ -1,0 +1,77 @@
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+body {
+  opacity: 0;
+  transition: opacity 3s;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: cursive;
+  text-align: center;
+  margin-top: 10px;
+}
+button {
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+
+}
+.ok {
+  text-align: center;
+}
+img {
+  text-align: center;
+}
+div {
+  text-align: center;
+}
+.js-result {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+  text-decoration: underline;
+  text-decoration-color: palevioletred;
+
+
+}
+.js-score {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.reset {
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: monospace;
+  cursor: pointer;
+  padding: 8px;
+  margin-top: 25px;
+}
+.js-moves {
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 19px;
+  font-family: cursive;
+}
