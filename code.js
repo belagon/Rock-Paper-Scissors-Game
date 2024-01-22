@@ -1,4 +1,4 @@
-
+// Zerar Pontuação //
 let score = JSON.parse(localStorage.getItem('score')) || {
   wins: 0,
   losses: 0,
@@ -6,7 +6,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
   
 
 };
-
+// Refresh //
 updateScoreElement();
 
 function playGame(playerMove) {
@@ -14,7 +14,7 @@ const computerMove = pickComputerMove()
 
   let result = '';
   updateScoreElement();
-
+// Mostrar resultados //
   if (playerMove === 'scissors') {
   if (computerMove === 'rock') {
   result = ' You lose.';
@@ -41,6 +41,7 @@ const computerMove = pickComputerMove()
   result = ' You win.';
   }
   }
+  // Atualizar o score //
   if (result === ' You win.') {
     score.wins += 1;
   } else if (result === ' You lose.') {
@@ -48,7 +49,7 @@ const computerMove = pickComputerMove()
   } else if (result === ' Tie.') {
     score.ties += 1;
   }
-
+  // Armazenar o score //
   localStorage.setItem('score', JSON.stringify(score)); 
 
   updateScoreElement();
@@ -74,7 +75,7 @@ function updateScoreElement() {
 }
 
 updateScoreElement();
-
+// Escolha do computador //
 function pickComputerMove() {
   let computerMove = '';
   const randomNumber = Math.random();
